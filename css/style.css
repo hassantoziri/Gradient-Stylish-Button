@@ -1,0 +1,121 @@
+
+
+/* ============================================================================= 
+
+Author: Hassan Mohamed Toziri
+Author URL: https://hassantoziri.github.io/
+Project URL: https://github.com/hassantoziri/Gradient-Stylish-Button.git
+
+
+Follow me on
+Twitter: https://twitter.com/hassantoziri
+Codepen: https://codepen.io/hassantoziri
+Behance:https://www.behance.net/hassantoziri
+
+============================================================================= */
+
+/* <- Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700");
+
+/* <- Linearicons icons Font */
+@import url('https://cdn.linearicons.com/free/1.0.0/icon-font.min.css');
+
+/* <- Global CSS */
+body {
+    position: relative;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #555;
+    line-height: 26px;
+    font-weight: 350;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus {
+    outline: 0;
+}
+
+button:active, button:focus {
+    outline: none;
+}
+
+
+/* <- Button CSS */
+.button-page {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.button-page .button-list {
+    position: relative;
+    text-align: center;
+}
+
+.button .button-1 , .button .button-2 , .button .button-3 {
+    position: relative;
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 14px !important;
+    padding: 10px 20px;
+    display: inline-block;
+    min-width: 150px;
+    margin-top: 35px;
+    margin-right: 15px;
+    letter-spacing: 1px;
+    background-size: 400% 400% !important;
+    border-radius: 100px !important;
+    background-size: 400% 400% !important;
+}
+
+.button .button-1 {
+    background: linear-gradient(135deg, #06831d,#0687b5, #06831d,#efc615,#0687b5);
+}
+
+.button .button-2 {
+    background: linear-gradient(135deg, #175C93,#0687b5, #06831d,#efc615,#0687b5);
+}
+
+.button .button-3 {
+    background: linear-gradient(135deg, #0687b5,#06831d, #0687b5,#06831d,#06831d);
+}
+
+.button .button-1 i , .button .button-2 i , .button .button-3 i {
+    font-size: 18px;
+    font-weight: 900!important;
+}
+
+.button .button-1:hover  , .button .button-2:hover {
+    animation: gradient 8s ease infinite;
+    color: #fff;
+}
+
+.button .button-3:hover{
+    animation: gradient 8s ease infinite;
+    color: #06831d;
+}
+
+/* <- Button Gradient */
+@keyframes gradient {
+    0%,
+    100% {
+        background-position: 0 20%
+    }
+    50% {
+        background-position: 100% 80%
+    }
+}
